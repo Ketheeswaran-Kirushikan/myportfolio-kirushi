@@ -1,0 +1,270 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+body{
+    background-color: #ecfeff;
+}
+
+/* Header Work */
+.navbarWidth {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.navbar {
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: #ecfeff;
+}
+
+.navLink .activated {
+    background-color: rgba(6, 182, 212, 0.2);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(6, 182, 212, 0.5);
+    width: 70px;
+}
+
+.navbar-brand,
+.navbar-nav .nav-link {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.nav-item {
+    margin-left: 30px;
+}
+
+.backColor {
+    background-color: #083344;
+    width: 100px;
+    height: auto;
+    border-radius: 5px;
+    color: #ecfeff;
+    font-weight: 500;
+    padding-top: -100px;
+}
+
+.backColor:hover {
+    color: #ecfeff;
+}
+
+@media (max-width: 768px) {
+    .backColor {
+        width: 100%;
+    }
+
+    .navLink .activated {
+        background-color: transparent;
+        box-shadow: none;
+    }
+
+    .nav-link:hover {
+        color: black;
+        font-weight: bold;
+    }
+
+    .nav-item {
+        padding-top: 15px;
+    }
+
+    .space {
+        margin-top: 20px;
+    }
+
+    .navbar-toggler {
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    .navbar {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
+
+/* Content Work */
+.mail-container {
+    height: 85vh;
+    margin-top: 150px;
+    padding-left: 50px;
+    padding-right: 50px;
+    justify-content: center;
+}
+
+.space-row {
+    margin-top: 20px;
+}
+
+.heading-contact {
+    padding: auto;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.heading-contact h1 {
+    font-size: 40px;
+    color: #0891b2;
+    font-weight: 600;
+}
+
+.content-contact {
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.content-contact p {
+    line-height: 30px;
+    color: #083344;
+    font-weight: 400;
+}
+
+.mailbox-container {
+    width: 100%;
+    padding-top: 50px;
+    margin-right: 11px;
+    margin-left: 11px;
+    padding-left: 100px;
+    padding-right: 100px;
+    display: flex;
+    justify-content: center;
+}
+.mailbox-contact .input-group{
+    width: 400px;
+}
+
+.mailbox-contact .input-group input::placeholder {
+    opacity: 0.3;
+}
+
+.mailbox-contact .input-group input:focus {
+    box-shadow: none;
+}
+.submit-contact{
+    justify-content: start;
+    width: 200px;
+}
+.submit-contact .btn {
+    background-color: #0e7490;
+    font-weight: 500;
+    border: none;
+    width: 100px;
+}
+
+.submit-contact .btn:active {
+    background-color: #0c5d73;
+}
+
+@media (max-width: 768px) {
+    .content-contact {
+        width: 100%;
+        text-align: justify;}
+
+    .mailbox-container {
+        display: block;
+        margin-bottom: 100px;
+        padding:0px;
+        margin: auto;
+    }
+
+    .mailbox-contact .input-group{
+        width:350px;
+        margin:0;
+    }
+    .submit-contact{
+        margin: auto;
+    }
+}
+
+
+/* Footer Work */
+footer{
+    margin-top: 0px;
+    background-color: rgb(8, 51, 68,0.3);
+    padding-top: 20px;
+}
+.quick-access ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.quick-access ul li {
+    padding: 20px;
+}
+
+.quick-access ul a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+}
+
+.footer-icon {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-icon a {
+    padding: 10px;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.logo-container ul{
+    justify-content: center;
+    margin: 0px;
+}
+
+.logo-container a {
+    text-decoration: none;
+    color: #000;
+}
+footer .row p{
+    background-color:rgb(8, 51, 68,0.5);
+    height: 30px;
+    
+}
+footer .row p span{
+    color: #22d3ee;
+    font-weight: 500;
+    align-items: center;
+}
+
+footer .copy-rights{
+    margin-bottom: 0px;
+    align-items: center;
+}
+@media (max-width: 768px) {
+    .quick-access ul {
+        flex-wrap: wrap;
+    }
+
+    .quick-access ul li {
+        padding: 10px;
+    }
+
+    .footer-icon {
+        flex-wrap: wrap;
+    }
+
+    .footer-icon a {
+        padding: 5px;
+    }
+
+    .logo-container ul {
+        flex-wrap: wrap;
+    }
+
+    footer .row p {
+        height: auto;
+    }
+}

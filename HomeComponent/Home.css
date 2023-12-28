@@ -1,0 +1,263 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+body{
+    background-color: #ecfeff;
+}
+
+/* Header Work */
+.navbarWidth {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.navbar {
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: #ecfeff;
+}
+
+.navLink .activated {
+    background-color: rgba(6, 182, 212, 0.2);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(6, 182, 212, 0.5);
+    width: 60px;
+}
+
+.navbar-brand,
+.navbar-nav .nav-link {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.nav-item {
+    margin-left: 30px;
+}
+
+.backColor {
+    background-color: #083344;
+    width: 100px;
+    height: auto;
+    border-radius: 5px;
+    color: #ecfeff;
+    font-weight: 500;
+    padding-top: -100px;
+}
+
+.backColor:hover {
+    color: #ecfeff;
+}
+
+@media (max-width: 768px) {
+    .backColor {
+        width: 100%;
+    }
+
+    .navLink .activated {
+        background-color: transparent;
+        box-shadow: none;
+    }
+
+    .nav-link:hover {
+        color: black;
+        font-weight: bold;
+    }
+
+    .nav-item {
+        padding-top: 15px;
+    }
+
+    .space {
+        margin-top: 20px;
+    }
+
+    .navbar-toggler {
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    .navbar {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
+
+/* Content Work */
+.content-container {
+    margin-top: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
+    height: 100vh;
+}
+
+.content-container .col1 {
+    text-align: start;
+}
+
+.col1 .name-font {
+    color: #0891b2;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.col1 .main-text {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.col1 .last-paragraph {
+    text-align: justify;
+}
+
+.col1 .left-text {
+    text-align: end;
+    color: #0891b2;
+    margin-bottom: 20px;
+}
+
+.col1 .hire-button {
+    background-color: #083344;
+    color: #ecfeff;
+}
+
+@media (max-width: 768px) {
+    .col1 .button-container .hire-button {
+        display: block;
+        margin: auto;
+        margin-bottom: 20px;
+        text-align: center;
+        width: 200px;
+    }
+
+    .col1 .left-text {
+        text-align: start;
+    }
+}
+
+.col2 {
+    justify-content: center;
+}
+
+.col2 .image {
+    margin: auto;
+}
+
+.icon-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.icon-container a {
+    padding: 10px;
+}
+
+@media (max-width: 768px) {
+    .icon-container {
+        display: none;
+    }
+
+    .col2 .image {
+        width: 100px;
+        height: 100px;
+    }
+
+    .content-container {
+        flex-direction: row;
+    }
+
+    .col {
+        width: 100%;
+    }
+}
+
+/* Footer Work */
+footer{
+    margin-top: 0px;
+    background-color: rgb(8, 51, 68,0.3);
+    padding-top: 20px;
+}
+.quick-access ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.quick-access ul li {
+    padding: 20px;
+}
+
+.quick-access ul a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+}
+
+.footer-icon {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-icon a {
+    padding: 10px;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.logo-container ul{
+    justify-content: center;
+    margin: 0px;
+}
+
+.logo-container a {
+    text-decoration: none;
+    color: #000;
+}
+footer .row p{
+    background-color:rgb(8, 51, 68,0.5);
+    height: 30px;
+    
+}
+footer .row p span{
+    color: #22d3ee;
+    font-weight: 500;
+    align-items: center;
+}
+
+footer .copy-rights{
+    margin-bottom: 0px;
+    align-items: center;
+}
+@media (max-width: 768px) {
+    .quick-access ul {
+        flex-wrap: wrap;
+    }
+
+    .quick-access ul li {
+        padding: 10px;
+    }
+
+    .footer-icon {
+        flex-wrap: wrap;
+    }
+
+    .footer-icon a {
+        padding: 5px;
+    }
+
+    .logo-container ul {
+        flex-wrap: wrap;
+    }
+
+    footer .row p {
+        height: auto;
+    }
+}
