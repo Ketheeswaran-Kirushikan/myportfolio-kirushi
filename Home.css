@@ -1,11 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap');
+
 *{
     padding: 0;
     margin: 0;
+    font-family: 'Roboto Condensed', sans-serif;
 }
-
-
 body{
     background-color: #ecfeff;
+    height: fit-content;
 }
 
 /* Header Work */
@@ -51,7 +53,7 @@ body{
     color: #ecfeff;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 576px) {
     .backColor {
         width: 100%;
     }
@@ -84,6 +86,7 @@ body{
         padding-right: 0px;
     }
 }
+
 
 /* Content Work */
 .content-container {
@@ -123,19 +126,6 @@ body{
     color: #ecfeff;
 }
 
-@media (max-width: 768px) {
-    .col1 .button-container .hire-button {
-        display: block;
-        margin: auto;
-        margin-bottom: 20px;
-        text-align: center;
-        width: 200px;
-    }
-
-    .col1 .left-text {
-        text-align: start;
-    }
-}
 
 .col2 {
     justify-content: center;
@@ -155,31 +145,139 @@ body{
     padding: 10px;
 }
 
-@media (max-width: 768px) {
-    .icon-container {
-        display: none;
+@media only screen and (min-width: 320px) and (max-width: 481px) {
+    .content-container {
+        align-items: center;
+        height: 70vh;
     }
 
     .col2 .image {
-        width: 100px;
         height: 100px;
+        width: auto;
     }
 
-    .content-container {
-        flex-direction: row;
+    .icon-container i {
+        display: none;
     }
 
-    .col {
-        width: 100%;
+    .col1 .left-text {
+        text-align: start;
+        margin-top: 0px;
+    }
+
+    .col1 .main-text {
+        font-size: 30px;
+    }
+
+    .col1 p {
+        font-size: 12px;
+    }
+
+    .col1 .button-container .hire-button {
+        display: block;
+        margin: auto;
+        margin-bottom: 20px;
+        text-align: center;
+        width: 100px;
+        font-size: 12px;
     }
 }
+@media only screen and (min-width: 481px) and (max-width: 769px) {
+    .col2 .image {
+        height: 200px;
+        width: auto;
+    }
+    .icon-container i {
+        display: none;
+    }
+
+    .col1 .left-text {
+        text-align: start;
+        margin-top: 0px;
+    }
+    .col1 .main-text {
+        font-size: 30px;
+    }
+
+    .col1 p {
+        font-size: 12px;
+    }
+
+    .col1 .button-container .hire-button {
+        display: block;
+        margin: auto;
+        margin-bottom: 20px;
+        text-align: center;
+        width: 100px;
+        font-size: 12px;
+    }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1200px){
+    .content-container {
+        margin-top: 100px;
+        padding-left: 50px;
+        padding-right: 50px;
+        height: 100vh;
+    }
+    
+    .content-container .col1 {
+        text-align: start;
+    }
+    
+    .col1 .name-font {
+        color: #0891b2;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    
+    .col1 .main-text {
+        font-size: 60px;
+        font-weight: bold;
+    }
+    
+    .col1 .last-paragraph {
+        text-align: justify;
+    }
+    
+    .col1 .left-text {
+        text-align: end;
+        color: #0891b2;
+        margin-bottom: 20px;
+    }
+    
+    .col1 .hire-button {
+        background-color: #083344;
+        color: #ecfeff;
+    }
+    
+    
+    .col2 {
+        justify-content: center;
+    }
+    
+    .col2 .image {
+        margin: auto;
+    }
+    
+    .icon-container {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .icon-container a {
+        padding: 10px;
+    }  
+}
+
+
 
 /* Footer Work */
-footer{
+footer {
     margin-top: 0px;
-    background-color: rgb(8, 51, 68,0.3);
-    padding-top: 20px;
+    background-color: rgb(8, 51, 68, 0.3);
 }
+
 .quick-access ul {
     list-style: none;
     display: flex;
@@ -236,28 +334,51 @@ footer .copy-rights{
     margin-bottom: 0px;
     align-items: center;
 }
-@media (max-width: 768px) {
+@media only screen and (min-width: 320px) and (max-width: 481px) {
+    footer {
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        position: relative;
+        clear: both;
+    }
+    
     .quick-access ul {
         flex-wrap: wrap;
+        font-size: 12px;
     }
-
+    
     .quick-access ul li {
-        padding: 10px;
-    }
-
-    .footer-icon {
-        flex-wrap: wrap;
-    }
-
-    .footer-icon a {
         padding: 5px;
     }
-
-    .logo-container ul {
-        flex-wrap: wrap;
-    }
-
+    
     footer .row p {
         height: auto;
+        margin-bottom: 0;
+        font-size: 13px;
+    }
+}
+@media only screen and (min-width: 481px) and (max-width: 769px) {
+    footer {
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        position: relative;
+        clear: both;
+    }
+    
+    .quick-access ul {
+        flex-wrap: wrap;
+        font-size: 12px;
+    }
+    
+    .quick-access ul li {
+        padding: 5px;
+    }
+    
+    footer .row p {
+        height: auto;
+        margin-bottom: 0;
+        font-size: 13px;
     }
 }
