@@ -1,59 +1,64 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Contact</title>
-        <meta charset="utf-8" />
-        <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1, shrink-to-fit=no"
-        />
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-            crossorigin="anonymous"
-        />
-        <link rel="stylesheet" href="contact.css">
-        <script src="https://kit.fontawesome.com/f64f7cb235.js" crossorigin="anonymous"></script>
-    </head>
 
-    <body>
+<head>
+    <title>Home</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">
+    <link rel="stylesheet" href="contact.css">
+    <script src="https://kit.fontawesome.com/f64f7cb235.js" crossorigin="anonymous"></script>
+    <script src="../script.js" defer></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        emailjs.init('u2yD14V7k622YuQMG')
+    </script>
+</head>
 
-        <header class="navbarWidth">
-            <nav class="navbar navbar-expand-lg fixed-top ">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="../index.html">
-                        <img src="../mylogo2.png" alt="Logo" width="40" height="40" class="d-inline-block align-text-top rounded-circle mt-0">
-                    </a>
-                    <a class="navbar-brand fs-3" href="../index.html"><b>K</b>irushi</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse navLink" id="navbarSupportedContent">
-                        <ul class="navbar-nav ms-auto fw-semibold">
-                            <li class="nav-item px-2 space">
-                                <a class="nav-link "  href="../index.html">Home</a>
-                            </li>
-                            <li class="nav-item px-2">
-                                <a class="nav-link" href="../AboutComponent/about.html">About</a>
-                            </li>
-                            <li class="nav-item px-2">
-                                <a class="nav-link" href="../ProjectComponent/projects.html">Projects</a>
-                            </li>
-                            <li class="nav-item px-2">
-                                <a class="nav-link active activated" aria-current="page" href="#">Contact</a>
-                            </li>
-                            <li class="nav-item px-2">
-                                <a class="nav-link" href="../LoginComponent/login.html">
-                                    <button class="backColor" href="">Login</button>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top mask-custom shadow-0">
+            <div class="container-fluid nightBackColor">
+                <a class="navbar-brand" href="#!">
+                    <span style="color: #5e9693;">Kirushikan</span>
+                    <span style="color: #0d0c0c;"> Ketheeswaran</span>
+                </a>
+                <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto" style="font-size: 20px;">
+                        <li class="nav-item" style="margin-right: 20px ;">
+                            <a class="nav-link" href="#!">Home</a>
+                        </li>
+                        <li class="nav-item" style="margin-right: 20px ;">
+                            <a class="nav-link" href="#!">About</a>
+                        </li>
+                        <li class="nav-item" style="margin-right: 20px ;">
+                            <a class="nav-link" href="#!">Projects</a>
+                        </li>
+                        <li class="nav-item" style="margin-right: 20px ;">
+                            <a class="nav-link" href="#!">Contact</a>
+                        </li>
+                        <li class="nav-item" style="margin-right: 20px ;">
+                            <a href="https://drive.google.com/file/d/1DP9oaMDnf-CvmBYaZyT2ldmN4vKBW7at/view?usp=sharing" style="text-decoration: none;">
+                                <button type="button" class="btn btn-dark navButton">Download CV</button>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-            </nav>
-        </header>
-        <main>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="nightModeContainer text-center">
+            <i class="bi bi-sun" id="sunIcon" onclick="toggleNightMode()"></i>
+            <i class="bi bi-moon hidden" id="moonIcon" onclick="toggleNightMode()"></i>
+        </div>
             <div class="container-fluid text-center mail-container">
                 <div class="row space-row">
                     <div class="col heading-contact">
@@ -78,55 +83,81 @@
                 </div>
               </div>
         </main>
-
-        <footer>
-            <div class="container-fluid text-center">
-                <div class="row logo-container">
-                    <ul class="list-unstyled d-flex">
-                        <li class="me-3">
-                            <a href="#">
-                                <img src="../mylogo2.png" alt="Logo" width="40" height="40" class="d-inline-block align-text-top rounded-circle mt-0">
-                            </a>
-                        </li>
-                        <li class="me-3">
-                            <a class="fs-3" href="#"><b>K</b>irushi</a>
-                        </li>
-                    </ul>
+        <footer style="background-color: #083344cc; color: #ffffff;">
+        <div class="container-fluid p-4 pb-0">
+            <div class="row" style="margin-bottom: 0px;">
+                <div class="col-md-3">
+                    <h1><i class="fas fa-gem me-3"></i>Get in touch with Me!.</h1>
                 </div>
-                <div class="row">
-                    <div class="quick-access">
-                        <ul class="list-unstyled d-flex">
-                            <li class="me-3">
-                                <a class="" href="../index.html">Home</a>
-                            </li>
-                            <li class="me-3">
-                                <a class="" href="../AboutComponent/about.html">About</a>
-                            </li>
-                            <li class="me-3">
-                                <a class="" href="../ProjectComponent/projects.html">Projects</a>
-                            </li>
-                            <li class="me-3">
-                                <a class="active" aria-current="page" href="#">Contact</a>
-                            </li>
-                        </ul>
+                <div class="col-md-3">
+                    <h2 style="margin-bottom: 20px;">Contact</h2>
+                    <div>
+                        <p style="padding-top: 10px;"><i class="fas fa-home me-3"></i>397/1,3rdlane,thirunavatkulam,Vavuniya,Srilanka</p>
+                        <p style="padding-top: 10px;"><i class="fas fa-envelope me-3"></i>kirushikanketheeswaran@gmail.com</p>
+                        <p style="padding-top: 10px;"><i class="fas fa-phone me-3"></i> + 94 762 015 96</p>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="footer-icon">
-                        <a href="https://www.facebook.com/profile.php?id=100011316999782&mibextid=LQQJ4d"><i class="fa-brands fa-facebook fa-lg" style="color: #155e75;"></i></a>
-                        <a href="#"><i class="fa-brands fa-twitter fa-lg" style="color: #155e75;"></i></a>
-                        <a href="http://linkedin.com/in/kirushikan-ketheeswaran-555358226"><i class="fa-brands fa-linkedin fa-lg" style="color: #155e75;"></i></a>
-                        <a href="https://instagram.com/ketheeswaran_kirushikan?igshid=OGQ5ZDc2ODk2ZA=="><i class="fa-brands fa-instagram fa-lg" style="color: #155e75;"></i></a>
-                        <a href="#"><i class="fa-brands fa-github fa-lg" style="color: #155e75;"></i></a>
-                        <a href="https://medium.com/@kirushikanketheeswaran"><i class="fa-brands fa-medium fa-lg" style="color: #155e75;"></i></a>
-                    </div>
-                </div>
-                <div class="row copy-rights">
-                    <p>&copy; 2023 <span>Kirushi</span>. All rights reserved.</p>
+                <div class="col-md-6">
+                    <form action="" id="form">
+                        <div class="row" style="margin-bottom: 0px;">
+                            <div class="col-md-6 col-12 mb-4 mb-md-0">
+                                <label for="formName" class="form-label">Your name</label>
+                                <div data-mdb-input-init class="form-outline mb-2">
+                                    <input type="text" id="from_name" class="form-control" placeholder="Your name" name="from_name" required />
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-12 mb-4 mb-md-0">
+                                <label for="formEmail" class="form-label">Email Address</label>
+                                <div data-mdb-input-init class="form-outline mb-2">
+                                    <input type="email" name="email_d" id="email_d" class="form-control" placeholder="Email Address" required />
+                                </div>
+                            </div>
+                            <div class="col-12 mb-4">
+                                <label for="textAreaExample" class="form-label">Message</label>
+                                <div data-mdb-input-init class="form-outline mb-2">
+                                    <textarea class="form-control" name="message" id="message" rows="4" required></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row" style="margin-bottom: 0px;">
+                            <div class="col text-center">
+                                <button data-mdb-ripple-init type="submit" id="button" class="btn btn-primary mb-4 nightColor dayColor">Send Message</button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
-        </footer>
+        </div>
 
+        <div class="container-fluid text-center" style="background-color: rgba(0, 0, 0, 0.05); padding: 0px;">
+            <hr style="height: 10px; margin: 0px; padding: 0px;">
+            <section class="mb-1">
+                <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button" data-mdb-ripple-color="dark">
+                    <i class="fab fa-facebook-f" style="color: #ffffff;"></i>
+                </a>
+                <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button" data-mdb-ripple-color="dark">
+                    <i class="fab fa-twitter" style="color: #ffffff;"></i>
+                </a>
+                <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button" data-mdb-ripple-color="dark">
+                    <i class="fab fa-google" style="color: #ffffff;"></i>
+                </a>
+                <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button" data-mdb-ripple-color="dark">
+                    <i class="fab fa-instagram" style="color: #ffffff;"></i>
+                </a>
+                <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button" data-mdb-ripple-color="dark">
+                    <i class="fab fa-linkedin" style="color: #ffffff;"></i>
+                </a>
+                <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button" data-mdb-ripple-color="dark">
+                    <i class="fab fa-github" style="color: #ffffff;"></i>
+                </a>
+            </section>
+
+            <div class="text-center p-1" style="background-color: #5555556e; margin: 0px; font-size: 20px;">
+                © 2024 Copyright:
+                <a class="text-body" href="#" style="color: #083344 !important; text-decoration: none;">Ketheeswaran Kirushikan</a>
+            </div>
+        </div>
+    </footer>
         <script
             src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
             integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
